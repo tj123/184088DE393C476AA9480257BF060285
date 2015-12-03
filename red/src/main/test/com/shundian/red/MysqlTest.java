@@ -22,4 +22,9 @@ public class MysqlTest {
 		template.update("insert into user values('asdf','111','sdfsd','efefef')");
 	}
 	
+	@Test
+	public void createTable(){
+		template.update("create table user(guid varchar(255),username varchar(255),password varchar(255),sex varchar(255))");
+	}
+	
 }
